@@ -7,9 +7,9 @@ fun main() {
         .zipWithNext { a, b -> b - a }
         .count { it > 0 }
 
-    val testInput = readInput("day_01/Day01_test")
+    val testInput = readInput("day_01/Input_test")
     check(part2(testInput) == 5)
 
-    val input = readInput("day_01/Day01")
+    val input = readInput("day_01/Input")
     println(part2(input))
 }

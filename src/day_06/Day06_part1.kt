@@ -5,8 +5,8 @@ import readInput
 fun main() {
     fun part1(input: List<String>): Int {
         val numbers = input.first().split(",").map { it.toInt() }.toMutableList()
-        for (i in 1..80) {
-            (0 until numbers.size).forEach { index ->
+        repeat(80) {
+            repeat(numbers.size) { index ->
                 if (numbers[index] == 0) {
                     numbers[index] = 7
                     numbers.add(8)
